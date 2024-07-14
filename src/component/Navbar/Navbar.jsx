@@ -21,13 +21,16 @@ const Navbar = () => {
               <li>Browse By Languages</li>
             </ul>
         </div>
-        <div className="anvbar_right">
-          <img src={search_icon} alt="" className=''/>
+        <div className="navbar_right">
+          <img src={search_icon} alt="" className='icons'/>
           <p>Childrens</p>
           <img src={bell_icon} alt="" className='icons' />
           <div className="navbar_profile">
             <img src={profile_img} alt="" className='profile'/>
             <img src={caret_icon} alt="" />
+            <div className="dropdown">
+              <p>Sign Out of Netflix</p>
+            </div>
           </div>
 
            
