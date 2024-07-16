@@ -13,12 +13,12 @@ const Navbar = () => {
         <div className="navbar_left">
             <img src={logo} alt=""  />
             <ul>
-              <li>Home</li>
-              <li>TV Shows</li>
-              <li>Movies</li>
-              <li>New & Populer</li>
-              <li>My List</li>
-              <li>Browse By Languages</li>
+             <li> <a href="#">Home</a> </li>
+             <li> <a href="#">TV Shows</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">New & Populer</a></li>
+              <li><a href="#">My List</a></li>
+              <li><a href="#">Browse By Languages</a></li>
             </ul>
         </div>
         <div className="navbar_right">

@@ -34,6 +34,12 @@
     cursor: pointer;
 }
 
+.navbar_left ul li a{
+    color: var(--text_color);
+    text-decoration: none;
+}
+
+
 .navbar_right{
     display: flex;
     /* justify-content: space-between; */
