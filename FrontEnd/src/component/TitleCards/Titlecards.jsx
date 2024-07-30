@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Titlecards.css'
 import card_data from '../../assets/cards/Cards_data'
+import { Link } from 'react-router-dom' 
 
 const Titlecards = ({title,category}) => {
 
@@ -20,10 +21,10 @@ const Titlecards = ({title,category}) => {
       <h2>{title?title:"Popular on Netflix"}</h2>
       <div className="card_list" ref={cardsRef}>
         {card_data.map((card, index)=>{
-          return <div className="card" key={index}>
+          return <Link to={`/player/${card.id}`} className="card" key={index}>
             <img src={card.image} alt="" />
             <p>{card.name} </p>
-          </div>
+          </Link>
         })
 
         }

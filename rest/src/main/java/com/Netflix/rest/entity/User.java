@@ -1,4 +1,4 @@
-package com.netflix.demo.entity;
+package com.Netflix.rest.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class user {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class user {
     private String email;
     private String password;
 
-    user(String name, String email, String password) {
+    User(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -55,3 +55,4 @@ public class user {
     }
 
 }
+
